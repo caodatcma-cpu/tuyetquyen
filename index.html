@@ -143,27 +143,16 @@ textarea{
 <textarea name="phuongcham" rows="2">Đừng để bản thân mình sau này nhìn lại và trách mình của quá đã trì hoãn và không nổ lực</textarea>
 </div>
 
-<!-- Ô ảnh -->
-<label class="image-box">
-    <span>chèn ảnh
-</span>
-    <input type="tuyetquyen.jpg" accept="image/*" onchange="loadImage(event)">
-    <img id="preview">
-</label>
+<div class="image-box">
+            <img src="tuyetquyen.jpg" alt="Ảnh Phan Thị Tuyết Quyên" onerror="this.src='https://via.placeholder.com/180?text=Thieu+Anh'">
+        </div>
 
-</div>
-</div>
-
-<script>
-function loadImage(event){
-    const img = document.getElementById('preview');
-    img.src = URL.createObjectURL(event.target.files[0]);
-    img.onload = () => URL.revokeObjectURL(img.src);
-    event.target.previousElementSibling.style.display = "none";
-}
+    </div> </div> <script>
+    // Phần này giờ để trống vì ảnh đã được load cố định từ file tuyetquyen.jpg
+    console.log("Trang tâm sự bản thân của Quyên đã sẵn sàng!");
 </script>
 
 </body>
 </html>
-
-
+</body>
+</html>
